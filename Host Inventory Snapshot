@@ -1,0 +1,17 @@
+REM Title: Host Inventory Snapshot
+REM Author: D-L3aN
+REM Description: Non-destructive host inventory. Writes report to Desktop.
+REM Target: Windows 10 / 11
+REM Version: 1.1
+REM Category: recon
+
+DEFINE #BOOT_DELAY 2500
+DEFINE #SETTLE     2000
+
+DELAY #BOOT_DELAY
+
+GUI r
+DELAY 600
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass -EncodedCommand REPLACE_THIS_WITH_YOUR_BASE64_STRING
+ENTER
+DELAY #SETTLE
